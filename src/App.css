@@ -1,38 +1,135 @@
+body {
+  font-family: 'Syne', sans-serif;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fon {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 500px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.constainer {
+  
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFBF5;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 35px 5px rgba(0,0,0,0.25), inset 0 2px 1px 1px rgba(255,255,255,0.9), inset 0 -2px 1px rgba(0,0,0,0.25);
+  border-radius: 6px;
+
+}
+h1 {
+  font-family: 'Patrick Hand', cursive;
+  color: #319080;
+  font-size: 80px;
+  letter-spacing: 3px;
+  text-shadow: 1px 5px 3px black 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+input {
+  width: 99%;
+  height: 30px;
+  font-family: 'Syne', sans-serif;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-color: transparent;
+  
+}
+
+.btn {
+  width: 100%;
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  background-color: #E90064;
+  font-size: 25px;
+  font-weight: bolder;
+  border: none;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 7px 0 7px 0;
+  box-shadow: inset 0 0 35px 5px rgba(0,0,0,0.25), inset 0 2px 1px 1px rgba(255,255,255,0.9), inset 0 -2px 1px rgba(0,0,0,0.25);
+}
+
+.btn:hover {
+  background-color: #c10e5c;
+}
+
+.pic {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+}
+
+h2 {
+  color: #2E4F4F; 
+  font-size: 35px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  
+  padding: 7px;
+  font-size: 23px;
+  color: #2E4F4F; 
+}
+
+p {
+  align-self: flex-end;
+  padding-right: 30px;
+  color: #2C3333;  
+  font-size: 15px;
+}
+
+ul {
+  width: 80%;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+li {
+  margin-top: 3px;
+  color: #2E4F4F; 
+  font-size: 18px;
+}
+
+@media all and (max-width: 500px) {
+
+  h1 {
+    font-size: 60px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
 }
