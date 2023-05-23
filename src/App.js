@@ -19,14 +19,14 @@ function App() {
       const responce = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${searchRecipe}&app_id=${API_ID}&app_key=${API_KEY}`);
       const data = await responce.json();
       setMyRecipes(data.hits);
-      console.log(data.hits) 
+       
       }
       getRecipe()
   }, [searchRecipe])
 
   const myInputRecipe = (e) => {
     setInputRecipe(e.target.value)
-    console.log(e.target.value)
+    
   }
 
   const EnterSearch = (e) => {
